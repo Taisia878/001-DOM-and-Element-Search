@@ -29,6 +29,10 @@
     getRandomColor функция, которая возвращает случайно сгенерированный цвет в фомрмате #001122
     Используя функцию getRandomColor добавьте для каждого параграфа рамку случайного цвета
     */
+   let listItems = document.getElementsByTagName("p");
+        for (const item of listItems) {
+        getRandomColor.Print();
+        } 
     function getRandomColor() {
         var letters = '0123456789ABCDEF';
         var color = '#';
@@ -37,6 +41,7 @@
         }
         return color;
     }
+
 </script>
 
 </html>
